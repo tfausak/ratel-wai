@@ -1,0 +1,26 @@
+name: ratel-wai
+version: 0.1.0
+
+category: Exceptions
+description: ratel-wai notifies Honeybadger about exceptions via a WAI middleware.
+extra-source-files:
+- CHANGELOG.md
+- package.yaml
+- README.md
+- stack.yaml
+github: tfausak/ratel-wai
+ghc-options: -Wall
+license: MIT
+maintainer: Taylor Fausak
+synopsis: Notify Honeybadger about exceptions via a WAI middleware.
+
+library:
+  dependencies:
+  - base ==4.8.*
+  - bytestring ==0.10.*
+  - case-insensitive ==1.2.*
+  - containers ==0.5.*
+  - http-client ==0.4.*
+  - ratel ==0.1.*
+  - wai ==3.2.*
+  source-dirs: library
