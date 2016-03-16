@@ -1,5 +1,5 @@
 extra-deps:
 - ratel-0.1.0
 install-ghc: true
-require-stack-version: '>=1.0.4'
+require-stack-version: ! '>=1.0.4'
 resolver: nightly-2016-02-24
