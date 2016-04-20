@@ -9,7 +9,7 @@ ghc-options: -Wall
 github: tfausak/ratel-wai
 library:
   dependencies:
-  - base ==4.8.*
+  - base >=4.8 && <4.10
   - bytestring ==0.10.*
   - case-insensitive ==1.2.*
   - containers ==0.5.*
