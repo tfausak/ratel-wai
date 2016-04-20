@@ -21,4 +21,4 @@ license: MIT
 maintainer: Taylor Fausak
 name: ratel-wai
 synopsis: Notify Honeybadger about exceptions via a WAI middleware.
-version: '0.1.1'
+version: '0.1.2'
