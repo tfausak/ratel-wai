@@ -13,8 +13,8 @@ library:
   - bytestring ==0.10.*
   - case-insensitive ==1.2.*
   - containers ==0.5.*
-  - http-client ==0.4.*
-  - ratel ==0.1.*
+  - http-client >=0.4.30 && <0.6
+  - ratel ==0.3.*
   - wai ==3.2.*
   source-dirs: library
 license: MIT
