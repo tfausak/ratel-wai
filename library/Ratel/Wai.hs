@@ -17,8 +17,8 @@ ratelMiddleware apiKey maybeManager modify handle request respond = do
         (do
             handle request (\ response -> do
                 respond response))
-        (\ exception -> do
-            let err = Ratel.toError (exception :: Exception.SomeException)
+        (\ (Exception.SomeException exception) -> do
+            let err = Ratel.toError exception
             let req = Ratel.Request
                     { Ratel.requestAction = Nothing
                     , Ratel.requestCgiData = Just (Map.union
