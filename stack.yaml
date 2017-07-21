@@ -1,3 +1,4 @@
+resolver: lts-8.0
+
 extra-deps:
-- ratel-0.3.0
-resolver: nightly-2016-07-15
+  - ratel-0.3.4
