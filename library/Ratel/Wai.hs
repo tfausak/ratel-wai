@@ -11,8 +11,8 @@ import qualified Network.Wai as Wai
 import qualified Ratel
 
 
-ratelMiddleware :: Ratel.ApiKey -> Maybe Client.Manager -> Wai.Middleware
-ratelMiddleware apiKey maybeManager handle request respond = do
+ratelMiddleware :: Ratel.ApiKey -> Maybe Client.Manager -> (Ratel.Payload -> IO Ratel.Payload) -> Wai.Middleware
+ratelMiddleware apiKey maybeManager modify handle request respond = do
     Exception.catch
         (do
             handle request (\ response -> do
@@ -38,7 +38,7 @@ ratelMiddleware apiKey maybeManager handle request respond = do
                     , Ratel.serverHostname = Nothing
                     , Ratel.serverProjectRoot = Nothing
                     }
-            let payload = Ratel.Payload
+            payload <- modify Ratel.Payload
                     { Ratel.payloadError = err
                     , Ratel.payloadNotifier = Nothing
                     , Ratel.payloadRequest = Just req
