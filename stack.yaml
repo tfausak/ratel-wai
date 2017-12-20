@@ -1,4 +1,1 @@
-resolver: lts-8.0
-
-extra-deps:
-  - ratel-0.3.4
+resolver: lts-10.0
