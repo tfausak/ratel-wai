@@ -14,7 +14,7 @@ library:
   - case-insensitive ==1.2.*
   - containers ==0.5.*
   - http-client >=0.4.30 && <0.6
-  - ratel ==0.3.*
+  - ratel >= 0.3 && < 0.4 || >= 1.0 && < 1.1
   - wai ==3.2.*
   source-dirs: library
 license: MIT
