@@ -1,4 +1,4 @@
-module Ratel.Wai where
+module Ratel.Wai ( ratelMiddleware ) where
 
 import qualified Control.Concurrent as Concurrent
 import qualified Control.Exception as Exception
@@ -17,8 +17,8 @@ ratelMiddleware apiKey maybeManager modify handle request respond = do
         (do
             handle request (\ response -> do
                 respond response))
-        (\ (Exception.SomeException exception) -> do
-            let err = Ratel.toError exception
+        (\ exception -> do
+            let err = Ratel.toError (exception :: Exception.SomeException)
             let req = Ratel.Request
                     { Ratel.requestAction = Nothing
                     , Ratel.requestCgiData = Just (Map.union
