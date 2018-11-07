@@ -1,4 +1,4 @@
 resolver: nightly-2018-11-01
 
 extra-deps:
-  - ratel-wai-1.0.6
+  - ratel-1.0.6
