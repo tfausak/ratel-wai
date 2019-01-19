@@ -1,4 +1,1 @@
-resolver: nightly-2018-11-01
-
-extra-deps:
-  - ratel-1.0.6
+resolver: lts-13.0
