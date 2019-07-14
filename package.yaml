@@ -1,5 +1,5 @@
 name: ratel-wai
-version: 1.0.5
+version: 1.0.6
 
 category: Exceptions
 description: ratel-wai notifies Honeybadger about exceptions via a WAI middleware.
