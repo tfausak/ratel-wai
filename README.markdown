@@ -1,12 +1,7 @@
-# [ratel-wai][]
+# ratel-wai
 
-[![Version badge][]][version]
-[![Build badge][]][build]
+[![Travis CI](https://travis-ci.org/tfausak/ratel-wai.svg?branch=master)](https://travis-ci.org/tfausak/ratel-wai)
+[![Hackage](https://img.shields.io/hackage/v/ratel-wai)](https://hackage.haskell.org/package/ratel-wai)
+[![Stackage](https://www.stackage.org/package/ratel-wai/badge/nightly?label=stackage)](https://www.stackage.org/package/ratel-wai)
 
 ratel-wai notifies Honeybadger about exceptions via a WAI middleware.
-
-[ratel-wai]: https://github.com/tfausak/ratel-wai
-[Version badge]: https://www.stackage.org/package/ratel-wai/badge/nightly?label=version
-[version]: https://www.stackage.org/package/ratel-wai
-[Build badge]: https://travis-ci.org/tfausak/ratel-wai.svg?branch=master
-[build]: https://travis-ci.org/tfausak/ratel-wai
