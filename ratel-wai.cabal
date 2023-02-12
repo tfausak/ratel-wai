@@ -43,6 +43,9 @@ common library
     -Wno-prepositive-qualified-module
     -Wno-unsafe
 
+  if flag(pedantic)
+    ghc-options: -Werror
+
 library
   import: library
 
