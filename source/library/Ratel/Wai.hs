@@ -50,7 +50,7 @@ ratelMiddleware apiKey maybeManager modify handle request respond = do
           Concurrent.forkIO
             ( do
                 _ <- Ratel.notify apiKey maybeManager payload
-                return ()
+                pure ()
             )
         Exception.throwIO exception
     )
