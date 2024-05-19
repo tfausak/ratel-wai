@@ -1,6 +1,6 @@
 cabal-version: 2.2
 name: ratel-wai
-version: 2.0.0.6
+version: 2.0.0.7
 synopsis: Notify Honeybadger about exceptions via a WAI middleware.
 description:
   ratel-wai notifies Honeybadger about exceptions via a WAI middleware.
