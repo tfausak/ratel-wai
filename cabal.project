@@ -1,7 +1,5 @@
 packages: .
 allow-newer:
-  -- https://github.com/tfausak/ratel/pull/23
-  , ratel:base
   -- https://github.com/haskell-hvr/uuid/issues/82
   , uuid-types:template-haskell
   -- https://github.com/HeinrichApfelmus/vault/pull/41
